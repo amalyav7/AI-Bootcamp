@@ -16,5 +16,5 @@ Why Current Solutions Fall Short: Most apps currently have fixed alarms and don'
 
 My App Will...: Remind users when to take their medication and verify it was taken while adjusting to the user's schedule.
 
-Scope for 10 Days: Train the AI to work around the users schedule and verifying that they take it.
+Scope for 10 Days: Train the AI to work around the users schedule and verify that they take it.
 
