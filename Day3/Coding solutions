@@ -1,0 +1,50 @@
+Problem 1:
+scores = input("Enter your scores: ").split(", ")
+target = float(input("Enter you target: "))
+low = 0
+high = len(scores) - 1
+mid = (low + high) // 2
+result = 0
+
+for i in range(len(scores)):
+    scores[i] = float(scores[i])
+    
+
+while low < high:
+    mid = (low + high) // 2
+    if scores[mid] < target:
+        low = mid + 1
+    else:
+        result = mid
+        high = mid
+        
+print(scores[result])
+
+Problem 2:
+message = input("Enter your message: ").split()
+poswords = input("Enter positive words: ").split()
+negwords = input("Enter negative words: ").split()
+posdiction = {}
+negdiction = {}
+num = 0
+
+for i in poswords:
+    key, value = i.split(":")
+    posdiction[key] = int(value)
+    
+for i in negwords:
+    key, value = i.split(":")
+    negdiction[key] = int(value)
+   
+for i in message:
+    if i in posdiction.keys():
+        num += posdiction[i]
+    elif i in negdiction.keys():
+        num += negdiction[i]
+        
+if num == 0:
+    print(num, "Neutral")
+elif num < 0:
+    print(num, "Negative")
+else:
+    print(num, "Positive")
