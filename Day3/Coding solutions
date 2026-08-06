@@ -1,4 +1,5 @@
 Problem 1:
+#declaring variables
 scores = input("Enter your scores: ").split(", ")
 target = float(input("Enter you target: "))
 low = 0
@@ -6,10 +7,11 @@ high = len(scores) - 1
 mid = (low + high) // 2
 result = 0
 
+#making values into float type
 for i in range(len(scores)):
     scores[i] = float(scores[i])
     
-
+#looking for result by dividing in half
 while low < high:
     mid = (low + high) // 2
     if scores[mid] < target:
@@ -17,10 +19,11 @@ while low < high:
     else:
         result = mid
         high = mid
-        
+
 print(scores[result])
 
 Problem 2:
+#declaring variables
 message = input("Enter your message: ").split()
 poswords = input("Enter positive words: ").split()
 negwords = input("Enter negative words: ").split()
@@ -28,6 +31,7 @@ posdiction = {}
 negdiction = {}
 num = 0
 
+#putting positive words and negative words in dictionaries
 for i in poswords:
     key, value = i.split(":")
     posdiction[key] = int(value)
@@ -35,16 +39,46 @@ for i in poswords:
 for i in negwords:
     key, value = i.split(":")
     negdiction[key] = int(value)
-   
+
+#calculating message value
 for i in message:
     if i in posdiction.keys():
         num += posdiction[i]
     elif i in negdiction.keys():
         num += negdiction[i]
-        
+
+#printing message value
 if num == 0:
     print(num, "Neutral")
 elif num < 0:
     print(num, "Negative")
 else:
     print(num, "Positive")
+
+Problem 3:
+#names is student names; profileinp is hours:score; and new student info
+names = input("Enter students: ").split()
+profileinp = input("Enter profiles: ").split()
+newstudkey, newstudval = input("Enter new students profile: ").split(":")
+profiles = {}
+hourdif = []
+scoredif = []
+dif = []
+
+#putting students profiles in a dictionary
+for i in profileinp:
+    key, value = i.split(":")
+    profiles[int(key)] = int(value)
+    
+#finding the difference
+for i in profiles.keys():
+    hourdif.append(abs((int(newstudkey))-i))
+    
+for i in profiles.values():
+    scoredif.append(abs((int(newstudval))-i))
+    
+#finding the student that best fits    
+for i in range(len(hourdif)):
+    dif.append((hourdif[i])+(scoredif[i]))
+    
+print(names[dif.index(min(dif))])
