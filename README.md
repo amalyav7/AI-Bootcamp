@@ -45,16 +45,16 @@ engineer and build a working AI-powered application.
 
 ## 🚀 Final AI Project
 
-**Project Name:** [Your App Name]
+**Project Name:** [MediMind]
 
 ### Problem
-What real-world problem does the app solve?
+People often forget to take their medication on time.
 
 ### Users
-Who will use the application?
+Patients and caregivers will use this app.
 
 ### AI Feature
-How does AI help solve the problem?
+AI helps solve the problems by checking your schedule and finding a time that is best for you to take your medication.
 
 ### Technology
 - Python
