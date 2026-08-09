@@ -1,1 +1,1 @@
-# AI-Bootcamp-Day-2
+# AI_Bootcamp
