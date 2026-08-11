@@ -1,28 +1,24 @@
-# Day 5 — Connecting Python with AI
+📅 Day 5 - Working with Files & APIs
+📚 What I Learned
 
-## What I Learned
-- Flowcharts
-- Input → Process → Output
-- Pseudocode
-- File handling
-- APIs
-- Requests and responses
-- JSON
-- Connecting Python with Ollama
+Today I learned how applications save data locally and communicate with external services using APIs. I also learned how to prevent programs from crashing by using exception handling.
 
-## What I Built
-I created a Python program that reads data from the files and writes to the file.
-
-## Key Concept
-
-User Input
-    ↓
-Python Program
-    ↓
-API Request
-    ↓
-AI Model
-    ↓
-JSON Response
-    ↓
-Output
+Topics Covered
+    Reading JSON files
+    Writing JSON files
+    Reading CSV files
+    Writing CSV files
+    APIs
+    API Requests
+    API Responses
+    Error Handling
+    try / except
+    Debugging with AI
+✅ Deliverables
+    Read data from a JSON or CSV file
+    Saved data to a JSON or CSV file
+    Connected to an API (or mock AI function)
+    Used try / except blocks
+    Used AI to debug Python code
+    Fixed program errors
+    Committed updated code to GitHub
