@@ -1,0 +1,6 @@
+git commands:
+git clone: used for adding repository to your local
+git status: shows if staged or not
+git add: command to stage
+git commit -m: commiting changes that you made
+git push: pushed changes to main branch
