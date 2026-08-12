@@ -1,0 +1,25 @@
+Test Case 1 (PASS) :
+  Sender: security-alert@microsoft-support-login.com
+
+  Subject Line: URGENT: Your Microsoft Account Will Be Suspended
+
+  Body: Dear Microsoft User, 
+          We detected unusual activity on your Microsoft account. 
+          Your account will be suspended within 24 hours unless you verify your identity immediately. 
+          Click the link below to confirm your account:https://microsoft-security-check.example.com 
+          You will be asked to enter your email address and password to complete verification.
+          Failure to verify your account may result in permanent account suspension. 
+        Microsoft Account Security Team
+
+Test Case 2 (PASS) :
+  Phone number: 202-555-0147
+  Message:  URGENT: Your bank account has been locked due to suspicious activity. 
+            Verify your identity immediately by clicking this link: http://secure-account-check.example. 
+            Failure to respond within 30 minutes may result in your account being permanently suspended.
+
+Test Case 3 (PASS) :
+  Phone number: 202-555-0168
+  Message:  Hey sweetie, please send me $25 as soon as you can for the school field trip. 
+            I forgot to pay it earlier and the deadline is today. You can use the payment link I sent you yesterday.
+            Please do it before 3 PM so you don’t miss the trip. 
+            Love, Mom ❤️
