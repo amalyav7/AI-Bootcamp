@@ -1,6 +1,7 @@
 import streamlit as st
 from openai import OpenAI
 import json
+from ollama import Client
 
 # Page settings
 st.set_page_config(
@@ -10,9 +11,20 @@ st.set_page_config(
 )
 
 # Connect to Ollama
-client = OpenAI(
-    base_url="http://localhost:11434/v1/",
-    api_key="f2d45f20df334a219cb9cb3eeb6b05ea.vjKMGFEkQU6TS9zS6kTGLv9m"
+try:
+    ollama_api_key = st.secrets["OLLAMA_API_KEY"]
+except Exception:
+    st.error(
+        "OLLAMA_API_KEY was not found. "
+        "Add it to .streamlit/secrets.toml."
+    )
+    st.stop()
+
+client = Client(
+    host="https://ollama.com",
+    headers={
+        "Authorization": f"Bearer {ollama_api_key}"
+    }
 )
 
 # Create session state
