@@ -40,21 +40,23 @@ engineer and build a working AI-powered application.
 | Day 3 | Functions | Modular Python Programs |
 | Day 4 | AI App Planning | App Proposal + Flowchart |
 | Day 5 | Files + APIs | Python → AI Connection |
-| ... | ... | ... |
+| Day 6 | Ollama | Connect program with Ollama |
+| Day 7 | Adding elements | Creating wireframe |
+| Day 8 | Public Streamlit | Deploying app |
 | Final | AI Application | Capstone Project |
 
 ## 🚀 Final AI Project
 
-**Project Name:** [MediMind]
+**Project Name:** [ScamShield]
 
 ### Problem
-People often forget to take their medication on time.
+People can't recognize and often fall for scam emails and messages.
 
 ### Users
-Patients and caregivers will use this app.
+Everyone who wants to check if something is a scam.
 
 ### AI Feature
-AI helps solve the problems by checking your schedule and finding a time that is best for you to take your medication.
+AI checks your inpur and looks for risk level, warning signs, and what to do next.
 
 ### Technology
 - Python
@@ -65,7 +67,6 @@ AI helps solve the problems by checking your schedule and finding a time that is
 
 ## 📸 Screenshots
 
-Add screenshots of the finished application here.
 
 ## 🌱 My Progress
 
